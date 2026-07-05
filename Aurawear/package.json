@@ -1,0 +1,28 @@
+{
+  "name": "aurawear-x",
+  "version": "1.0.0",
+  "description": "Enterprise Fashion Commerce Platform with Virtual Try-On",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start:backend": "cd backend && npm run dev",
+    "start:frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm install && npm run dev",
+    "frontend": "cd frontend && npm install && npm run dev"
+  },
+  "keywords": [
+    "ecommerce",
+    "fashion",
+    "commerce",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "AuraWear X",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
